@@ -9,4 +9,4 @@ services:
             - .:/app/
             - /app/node_modules
         ports:
-            - 2023:2023
+            - 2023:3000
