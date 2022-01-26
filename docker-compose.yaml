@@ -1,0 +1,12 @@
+version: '3.8'
+services: 
+    web:
+        build:
+            context: .
+            dockerfile: ./Dockerfile.dockerfile
+        command: npm start
+        volumes: 
+            - .:/app/
+            - /app/node_modules
+        ports:
+            - 2023:2023
